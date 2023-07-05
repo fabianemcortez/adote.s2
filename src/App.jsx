@@ -1,14 +1,21 @@
-//Importar o Rautes e Route, 
+//Importar o Rautes e Route,
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import { BackspaceIcon } from "@heroicons/react/24/outline";
+import HomePage from "./pages/HomePage";
+import Navbar from "./componets/Navbar";
+import DetailAnimal from "./pages/DetailAnimal";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <BackspaceIcon className="h-6 w-6"/>
+      <Navbar />
+      <Toaster />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Animais/:id" element={<DetailAnimal />} />
+      </Routes>
     </>
   );
 }
