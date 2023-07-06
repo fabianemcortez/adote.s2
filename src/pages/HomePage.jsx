@@ -5,6 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Cards from "../componets/Cards";
 import FormPublicar from "../componets/FormPublicar";
+import banner from "../assets/imgs/banner.jpg";
 
 export default function HomePage() {
   const [reload, setReload] = useState(false);
@@ -14,7 +15,7 @@ export default function HomePage() {
       <nav>{/* Aqui está a navbar */}</nav>
 
       <img
-        src="/imgs/banner.jpg"
+        src={banner}
         alt="Banner"
         style={{ width: "100vw", height: "260px", objectFit: "cover" }}
       />
@@ -43,13 +44,11 @@ export default function HomePage() {
         </p>
       </div>
 
-      <div style={{ display: "flex", gap: "40px", justifyContent: "center"}}>
+      <div style={{ display: "flex", gap: "40px", justifyContent: "center" }}>
         <Cards reload={reload} setReload={setReload} />
       </div>
 
       <FormPublicar reload={reload} setReload={setReload} />
-
-      
     </div>
   );
 }
