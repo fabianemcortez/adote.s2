@@ -169,31 +169,43 @@ export default function DetailAnimal() {
                 </div>
               </div>
 
-              
-              <button
-              style={{color: "#794577"}}
-                onClick={() => {
-                  setShow(false);
-                }}
-              >
-                Fechar
-              </button>
+              <div className="BotoesModal">
+                <button
+                  style={{
+                    width: "50px",
+                    height: "40px",
+                    backgroundColor: "#2E2E2E",
+                    color: "#FFFFFF",
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    display: "block",
+                    margin: "0 auto",
+                  }}
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  Fechar
+                </button>
 
-              <button
-                style={{
-                  width: "250px",
-                  height: "44px",
-                  border: "2px solid #794577",
-                  borderRadius: "12px",
-                  backgroundColor: "#FAD35C",
-                  color: "#794577",
-                  fontWeight: "600",
-                }}
-                onClick={handleSubmitEdit}
-              >
-                Editar
-              </button>
-
+                <button
+                  style={{
+                    width: "50px",
+                    height: "40px",
+                    backgroundColor: "#2E2E2E",
+                    color: "#FFFFFF",
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    display: "block",
+                    margin: "0 auto",
+                  }}
+                  onClick={handleSubmitEdit}
+                >
+                  Editar
+                </button>
+              </div>
             </form>
           </div>
         </div>

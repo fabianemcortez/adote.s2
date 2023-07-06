@@ -1,7 +1,6 @@
 //Importar o Rautes e Route,
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./componets/Navbar";
 import DetailAnimal from "./pages/DetailAnimal";
