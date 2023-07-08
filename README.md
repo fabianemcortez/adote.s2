@@ -27,4 +27,4 @@ A página está estruturada de forma responsiva, se adaptando a diferentes taman
 Conclusão
 Esta documentação fornece uma visão geral do site e suas principais funcionalidades. Utilize-a como referência para entender a estrutura e o funcionamento do site ao realizar modificações ou adições. Em caso de dúvidas ou necessidade de mais informações, consulte a documentação do código-fonte e os arquivos relacionados.
 
-Link: 
+Link: https://adotes2.netlify.app/
